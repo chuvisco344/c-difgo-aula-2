@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*Smartphone e genéricas*/
+*{
+    font-family: 'Roboto', sans-serif;
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #cc5050;
+}
+header{
+    background-color: #E3350D;
+}
+h1{
+    color: #fff;
+    text-align: center;
+    font-size: 1rem; /* Equivale a 16Px Por Padrão*/
+}
+h2{
+font-size: .75rem;
+}
+
+img{
+width: 5rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 5.5rem;
+    row-gap: 1.25rem;
+    padding: 1rem;
+}
+
+.card{
+padding: .5rem 1.25rem;
+border-radius: .625rem;
+box-shadow: 0 .025rem .25rem #000;
+}
+
+/* Fundos dos Cards*/
+.bg-light-green{
+    background-color: #9BCC50;
+    color: #FFF;
+}
+
+.bg-orange{
+    background-color: #fd7d24;
+    color: #FFF;
+}
+.bg-blue{
+    background-color: #4592c4;
+    color: #FFF;
+}
+
+.bg-yellow{
+    background-color: rgb(252, 236, 10);
+    color:#FFF ;
+}
+
+.bg-olive{
+    background-color: #739f40;
+    color: #FFF;
+}
+.bg-brown{
+    background-color: #a05b31dc;
+    color: #FFF;
+}
+/* Tablet*/
+@media screen and (min-width: 768px){
+    html    {
+        font-size: 24px;
+        }
+        main{
+            grid-template-columns: repeat(3, auto);
+        }
+    }
+
+
+/* Telas Largas*/
+@media screen and (min-width: 992px){
+    html    {
+        font-size: 32px;
+        }
+        main{
+            grid-template-columns: repeat(4, auto);
+        }
+    }
+
